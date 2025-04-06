@@ -43,20 +43,6 @@ src/
 
 ---
 
-## 📸 Screenshots
-
-**Desktop view**
-
-- Cards show yard size, warnings, and pricing
-- Disabled cards are faded with disabled buttons
-
-**Mobile view**
-
-- Bottom bar adjusts layout to keep all info in a single line
-- Responsive buttons for Back and Continue
-
----
-
 ## 🧪 How to Run
 
 ```bash
