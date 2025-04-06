@@ -1,70 +1,70 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 📦 Skip Selection UI – README
 
-## Available Scripts
+This project provides a clean and user-friendly interface for selecting skip bin sizes, hire duration, and pricing, with visual warnings for certain restrictions (e.g., **Private Property Only**, **Not Suitable for Heavy Waste**).
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 📏 Skip selection cards with clear yard size, hire period, and weekly price
+- ⚠️ Warning indicators for skips that:
+  - Aren’t allowed on public roads
+  - Aren’t suitable for heavy waste
+- 🚫 Disabled states for skips not suitable for heavy waste
+- 🖱️ Entire card is clickable except when disabled
+- 🧑‍💻 Fully responsive layout
+- 📱 Mobile-optimized bottom bar with selection summary and action buttons
+- 🎨 Custom styling using Tailwind CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠 Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React
+- Tailwind CSS
+- JavaScript (ES6+)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📁 Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+src/
+├── components/
+│   ├── SkipCard.jsx       # Individual skip card with warnings & states
+│   └── BottomBar.jsx      # Responsive footer for selection summary
+├── hooks/
+│   ├── useFetchSkips.js   # Hook to fetch skips data from API - can be done using redux or other store
+├── pages/
+│   ├── SkipSelector.jsx   # Skip selector page
+└── App.js                 # Main view to render skip cards
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 📸 Screenshots
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Desktop view**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Cards show yard size, warnings, and pricing
+- Disabled cards are faded with disabled buttons
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Mobile view**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Bottom bar adjusts layout to keep all info in a single line
+- Responsive buttons for Back and Continue
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🧪 How to Run
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+# Install dependencies
+npm install
 
-### Code Splitting
+# Run the server
+npm run start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ensure Tailwind CSS is set up in your project (if not, run `npx tailwindcss init` and configure it).
